@@ -1,4 +1,5 @@
 # deploy-infra.yaml
+# this is just tocheck
 name: Deploy Bicep template
 
 on:
