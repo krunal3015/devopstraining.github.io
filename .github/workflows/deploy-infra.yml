@@ -14,7 +14,11 @@ env:
 jobs:
   deploy-infra:
     runs-on: ubuntu-latest
-
+    
+    # The output can be read from other jobs that depend on this one
+    outputs:
+      webAppName: ${{ steps.infra.outputs.webAppName }}
+      
     steps:
       - uses: actions/checkout@v2
 
